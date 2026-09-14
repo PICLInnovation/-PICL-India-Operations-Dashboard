@@ -173,21 +173,6 @@
     visibility: visible;
     transform: translateY(0);
   }
-  .panel-label {
-    position: absolute;
-    top: 12px;
-    left: 16px;
-    z-index: 2;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10.5px;
-    letter-spacing: 0.3px;
-    color: var(--text-dim);
-    background: var(--panel);
-    padding: 4px 9px;
-    border-radius: 4px;
-    border: 1px solid var(--border);
-    pointer-events: none;
-  }
   iframe {
     width: 100%;
     height: 100%;
@@ -276,12 +261,10 @@
 
 <div class="stage">
   <div class="panel active" id="panel-0">
-    <span class="panel-label">PRODUCTION PERFORMANCE</span>
     <div class="loading" id="load-0"><div class="spinner"></div><span>Loading production data…</span></div>
     <iframe src="https://piclinnovation.github.io/Production-Performance/" title="Production Performance" onload="document.getElementById('load-0').style.display='none'"></iframe>
   </div>
   <div class="panel" id="panel-1">
-    <span class="panel-label">MANPOWER</span>
     <div class="loading" id="load-1"><div class="spinner"></div><span>Loading manpower data…</span></div>
     <iframe src="https://piclinnovation.github.io/Manpower_Dashboard/" title="Manpower Dashboard" onload="document.getElementById('load-1').style.display='none'"></iframe>
   </div>
